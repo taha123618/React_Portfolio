@@ -1,0 +1,170 @@
+
+
+.a {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .a-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+  }
+  
+  .a-right {
+    flex: 1;
+  }
+  
+  .a-card.bg {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-color: #59b256;
+  }
+  
+  .a-card {
+    width: 55%;
+    height: 70vh;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .a-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .a-award-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+  }
+  
+  .a-title {
+    font-weight: 400;
+  }
+  
+  .a-sub {
+    margin: 20px 0px;
+    font-size: x-large;
+  }
+  
+  .a-desc{
+      font-weight: 300;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  .btn-col{
+      color: #eee;
+      background-color: #59b256;
+      border-radius: 5rem;
+      padding: 0.5rem;
+      cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+}
+
+  a :hover{
+      color: #59b256;
+      background-color: #eee;
+  }
+
+
+  .a-award{
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .a-award-texts{
+      width: 70%;
+  }
+  
+  .a-award-title{
+      font-weight: bold;
+      color: #555;
+      margin-bottom: 10px;
+  }
+
+/* skills section  */
+  .progress-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 20px;
+}
+/* .progress{
+    height: 20px;
+    background:#eee;
+    border-width: 8px 0;
+    border-style: solid none;
+    border-color: #333;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    box-shadow: none;
+    overflow: visible;
+    position: relative;
+}
+.progress .progress-bar{
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    background: transparent;
+    position: relative;
+    animation: animate-positive 1s;
+}
+.progress .progress-bar::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #555;
+    background: #eee;
+    position: absolute;
+    top: -14px;
+    right: 0;
+}
+@-webkit-keyframes animate-positive{
+    0%{ width: 0; }
+}
+@keyframes animate-positive{
+    0%{ width: 0; }
+} */
+/* skills section  end */
+  
+  @media screen and (max-width:480px) {
+      .a{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+      }
+  
+      .a-left {
+        width: 100%;
+      }
+  
+      .a-card {
+        height:30vh;
+      }
+  
+      .a-card.bg, .a-award {
+        display: none;
+      }
+  
+      .a-right{
+        padding: 20px;
+      }
+
+      .skills{
+        margin-top: 10px;
+      }
+  }
+  
