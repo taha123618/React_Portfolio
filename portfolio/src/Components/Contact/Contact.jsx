@@ -5,26 +5,24 @@ import Email from "../../IMG/email.png";
 import Address from "../../IMG/address.png";
 import emailjs from "emailjs-com";
 import { ThemeContext } from "../../Context";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { Helmet } from "react-helmet";
 
 const Contact = () => {
-
   const notify = () => toast("Message Send Successfully");
 
-
-  // uncontrolled form 
+  // uncontrolled form
   const formRef = useRef();
 
-  const [done, setDone] = useState(false)
+  const [done, setDone] = useState(false);
   const Theme = useContext(ThemeContext);
   const darkMode = Theme.state.darkMode;
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // for send email by using email.js 
+    // for send email by using email.js
     emailjs
       .sendForm(
         "service_gka53iv",
@@ -35,13 +33,13 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          setDone(true)
+          setDone(true);
         },
         (error) => {
           console.log(error.text);
         }
       );
-    //   email.js End 
+    //   email.js End
   };
 
   return (
@@ -52,10 +50,7 @@ const Contact = () => {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-        <meta
-          name="React portfolio"
-          content="Portfolio content"
-        />
+        <meta name="React portfolio" content="Portfolio content" />
         <meta property="og:title" content="React Portfolio" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://github.com/taha123618" />
@@ -69,7 +64,7 @@ const Contact = () => {
             <div className="c-info">
               <div className="c-info-item">
                 <img src={Phone} alt="PhoneNo" className="c-icon" />
-                0349294930
+                03492994930
               </div>
               <div className="c-info-item">
                 <img className="c-icon" src={Email} alt="Email" />
@@ -89,22 +84,33 @@ const Contact = () => {
             <form ref={formRef} onSubmit={handleSubmit}>
               <input
                 style={{ backgroundColor: darkMode && "#333" }}
-                type="text" placeholder="Name" name="user_name" />
+                type="text"
+                placeholder="Name"
+                name="user_name"
+              />
               <input
                 style={{ backgroundColor: darkMode && "#333" }}
-                type="text" placeholder="Subject" name="user_subject" />
+                type="text"
+                placeholder="Subject"
+                name="user_subject"
+              />
               <input
                 style={{ backgroundColor: darkMode && "#333" }}
-                type="text" placeholder="Email" name="user_email" />
+                type="text"
+                placeholder="Email"
+                name="user_email"
+              />
               <textarea
                 style={{ backgroundColor: darkMode && "#333" }}
-                rows="5" placeholder="Message" name="message" />
+                rows="5"
+                placeholder="Message"
+                name="message"
+              />
               <button onClick={notify}>Submit</button>
               <br></br>
               {done && "Thank you...!"}
               <ToastContainer position="top-center" />
             </form>
-
           </div>
         </div>
       </div>

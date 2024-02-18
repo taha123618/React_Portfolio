@@ -1,8 +1,9 @@
-*{
-    font-family: 'Kaushan Script', cursive;
-    box-sizing: none;
-  }  
-::selection{
-    background: #59b256;
-    color: #fff;
-  }
+* {
+  font-family: "Kaushan Script", cursive;
+  box-sizing: none;
+}
+
+::selection {
+  background: #59b256;
+  color: #fff;
+}

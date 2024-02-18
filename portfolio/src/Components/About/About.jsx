@@ -1,10 +1,9 @@
-import React from 'react';
-import Skills from './Skills';
-import Cer from './Cer';
+import React from "react";
+import Skills from "./Skills";
+import Cer from "./Cer";
 import "./About.css";
 import taha from "../../IMG/taha.jpg";
-import Helmet from 'react-helmet';
-
+import Helmet from "react-helmet";
 
 const About = () => {
   return (
@@ -15,10 +14,7 @@ const About = () => {
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-        <meta
-          name="React portfolio"
-          content="Portfolio content"
-        />
+        <meta name="React portfolio" content="Portfolio content" />
         <meta property="og:title" content="React Portfolio" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://github.com/taha123618" />
@@ -33,16 +29,20 @@ const About = () => {
         </div>
         <div className="a-right">
           <h1 className="a-title">About Me</h1>
-          <p className="a-sub ">
-            MERN DEVELOPER
-          </p>
+          <p className="a-sub ">REACT DEVELOPER</p>
           <p className="a-desc">
             I Enjoy taking complex problems and turning them in to simple and
-            beautiful interface design. I have skills on HTML5, CSS3, JavaScript, ES6 ,
-            Bootstrap 5, Wordpress, SCSS(CSS pre complier) , Tailwind CSS , React, Node JS , Express JS , Mongo DB ,MERN. Currently I Working as a Web Developer with having more than 1 year of experience in the field. My goal is to make every client 100%
+            beautiful interface design. I have skills on HTML5, CSS3,
+            JavaScript, ES6 , Bootstrap 5, SCSS(CSS pre complier) , Tailwind CSS
+            , React, Node JS , Express JS , Mongo DB ,MERN, Jquery. Currently I
+            Working as a Web Developer with having more than 1 year of
+            experience in the field. My goal is to make every client 100%
             satisfied with my creative work.
-          </p><br />
-          <a href="taha-ahmed-2021.pdf" target="_pdf" className="btn-col" >Download Resume</a>
+          </p>
+          <br />
+          <a href="Resume(2024).pdf" target="_pdf" className="btn-col">
+            Download Resume
+          </a>
 
           {/* <div className="a-award"> */}
           {/* <img src={Award} alt="" className="a-award-img" /> */}
@@ -58,7 +58,6 @@ const About = () => {
       </div>
       <Skills />
       <Cer />
-
     </>
   );
 };

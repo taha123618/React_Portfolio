@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "./Home.css";
 import Home1 from "../../IMG/Home.png";
 
@@ -19,7 +19,8 @@ const Home = () => {
             </div>
           </div>
           <p className="i-desc">
-            My goal is to make my every client 100% satisfied with my creative work.
+            My goal is to make my every client 100% satisfied with my creative
+            work.
           </p>
         </div>
         <svg
